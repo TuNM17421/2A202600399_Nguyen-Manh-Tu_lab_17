@@ -1,0 +1,131 @@
+turn,query,response_relevance,context_utilization,token_efficiency,prompt_tokens,response_tokens,memory_type,conv_id,theme,has_memory
+1,"Hi, my name is Alex and I love Italian food, especially past...",10.0,0.0,0.6875,15,33,redis,1,user_preference,True
+2,I also really enjoy hiking on weekends.,10.0,2.0,0.2713,94,35,buffer,1,user_preference,True
+3,What kind of restaurants would you recommend for me?,10.0,10.0,0.2861,257,103,redis,1,user_preference,True
+4,What outdoor activities might I enjoy based on what you know...,9.0,5.0,0.1601,472,90,redis,1,user_preference,True
+5,Can you suggest a meal I could cook at home this weekend?,10.0,8.0,0.1651,541,107,buffer,1,user_preference,True
+1,"Hi, my name is Alex and I love Italian food, especially past...",10.0,0.0,0.6429,15,27,none,1,user_preference,False
+2,I also really enjoy hiking on weekends.,10.0,0.0,0.7778,8,28,none,1,user_preference,False
+3,What kind of restaurants would you recommend for me?,8.0,0.0,0.7826,10,36,none,1,user_preference,False
+4,What outdoor activities might I enjoy based on what you know...,6.0,0.0,0.9324,14,193,none,1,user_preference,False
+5,Can you suggest a meal I could cook at home this weekend?,10.0,0.0,0.939,13,200,none,1,user_preference,False
+1,I work as a software engineer at a startup in Hanoi.,9.0,0.0,0.7,12,28,redis,2,factual_recall,True
+2,I have 3 years of experience with Python.,9.0,8.0,0.328,84,41,redis,2,factual_recall,True
+3,My team uses React for the frontend.,9.0,5.0,0.1644,188,37,buffer,2,factual_recall,True
+4,What programming languages do I know?,8.0,8.0,0.0665,393,28,redis,2,factual_recall,True
+5,What city do I work in?,0.0,2.0,0.0113,437,5,redis,2,factual_recall,True
+1,I work as a software engineer at a startup in Hanoi.,9.0,0.0,0.7,12,28,none,2,factual_recall,False
+2,I have 3 years of experience with Python.,10.0,0.0,0.8592,10,61,none,2,factual_recall,False
+3,My team uses React for the frontend.,10.0,0.0,0.8261,8,38,none,2,factual_recall,False
+4,What programming languages do I know?,8.0,0.0,0.8704,7,47,none,2,factual_recall,False
+5,What city do I work in?,10.0,0.0,0.7407,7,20,none,2,factual_recall,False
+1,Last month I attended a machine learning conference in Singa...,10.0,0.0,0.7179,11,28,episodic,3,experience_recall,True
+2,The conference had a great talk about transformer architectu...,9.0,8.0,0.2456,86,28,semantic,3,experience_recall,True
+3,I met a researcher from Google Brain there.,9.0,10.0,0.2201,124,35,episodic,3,experience_recall,True
+4,What event did I attend last month?,0.0,8.0,0.0505,207,11,episodic,3,experience_recall,True
+5,Who did I meet at that event?,5.0,10.0,0.0842,261,24,episodic,3,experience_recall,True
+1,Last month I attended a machine learning conference in Singa...,10.0,0.0,0.7755,11,38,none,3,experience_recall,False
+2,The conference had a great talk about transformer architectu...,9.0,0.0,0.7959,10,39,none,3,experience_recall,False
+3,I met a researcher from Google Brain there.,9.0,0.0,0.7429,9,26,none,3,experience_recall,False
+4,What event did I attend last month?,8.0,0.0,0.8095,8,34,none,3,experience_recall,False
+5,Who did I meet at that event?,8.0,0.0,0.8298,8,39,none,3,experience_recall,False
+1,Can you explain how neural networks learn?,10.0,0.0,0.9744,8,305,semantic,4,semantic_similarity,True
+2,That makes sense. How does backpropagation work specifically...,10.0,10.0,0.5501,346,423,buffer,4,semantic_similarity,True
+3,What role does the learning rate play in training?,10.0,10.0,0.2135,1105,300,semantic,4,semantic_similarity,True
+4,How is gradient descent related to what we just discussed?,10.0,10.0,0.139,1859,300,buffer,4,semantic_similarity,True
+5,What was the main topic we've been exploring?,10.0,10.0,0.0177,2170,39,buffer,4,semantic_similarity,True
+1,Can you explain how neural networks learn?,10.0,0.0,0.9724,8,282,none,4,semantic_similarity,False
+2,That makes sense. How does backpropagation work specifically...,10.0,0.0,0.9668,12,349,none,4,semantic_similarity,False
+3,What role does the learning rate play in training?,10.0,0.0,0.9595,10,237,none,4,semantic_similarity,False
+4,How is gradient descent related to what we just discussed?,10.0,0.0,0.9191,11,125,none,4,semantic_similarity,False
+5,What was the main topic we've been exploring?,7.0,0.0,0.7692,9,30,none,4,semantic_similarity,False
+1,My name is Maria and I prefer Python over JavaScript.,10.0,0.0,0.8065,12,50,redis,5,mixed_memory,True
+2,I recently completed a project on sentiment analysis.,10.0,10.0,0.2279,105,31,buffer,5,mixed_memory,True
+3,The project used BERT and achieved 92% accuracy.,9.0,10.0,0.1795,224,49,semantic,5,mixed_memory,True
+4,What programming language do I prefer?,2.0,5.0,0.0156,441,7,redis,5,mixed_memory,True
+5,Tell me about the project I worked on recently.,8.0,10.0,0.1467,349,60,buffer,5,mixed_memory,True
+1,My name is Maria and I prefer Python over JavaScript.,9.0,0.0,0.6571,12,23,none,5,mixed_memory,False
+2,I recently completed a project on sentiment analysis.,9.0,0.0,0.7188,9,23,none,5,mixed_memory,False
+3,The project used BERT and achieved 92% accuracy.,9.0,0.0,0.7692,12,40,none,5,mixed_memory,False
+4,What programming language do I prefer?,6.0,0.0,0.8727,7,48,none,5,mixed_memory,False
+5,Tell me about the project I worked on recently.,8.0,0.0,0.7872,10,37,none,5,mixed_memory,False
+1,Let's plan a trip to Japan.,10.0,0.0,0.8793,7,51,buffer,6,context_continuity,True
+2,I want to visit Tokyo and Kyoto.,10.0,8.0,0.4133,88,62,buffer,6,context_continuity,True
+3,I have a budget of $3000 for two weeks.,10.0,10.0,0.5691,234,309,buffer,6,context_continuity,True
+4,I prefer cultural experiences over shopping.,10.0,10.0,0.3391,766,393,redis,6,context_continuity,True
+5,Summarize the trip plan based on everything I've told you.,10.0,10.0,0.2608,1046,369,buffer,6,context_continuity,True
+1,Let's plan a trip to Japan.,10.0,0.0,0.9851,7,462,none,6,context_continuity,False
+2,I want to visit Tokyo and Kyoto.,10.0,0.0,0.9795,8,383,none,6,context_continuity,False
+3,I have a budget of $3000 for two weeks.,10.0,0.0,0.9526,12,241,none,6,context_continuity,False
+4,I prefer cultural experiences over shopping.,10.0,0.0,0.8889,7,56,none,6,context_continuity,False
+5,Summarize the trip plan based on everything I've told you.,2.0,0.0,0.6389,13,23,none,6,context_continuity,False
+1,I usually prefer tea over coffee.,9.0,0.0,0.7667,7,23,redis,7,preference_update,True
+2,"Actually, I've started drinking coffee lately.",9.0,5.0,0.3333,66,33,buffer,7,preference_update,True
+3,I like it black with no sugar.,10.0,8.0,0.1562,189,35,redis,7,preference_update,True
+4,What is my current coffee preference?,2.0,10.0,0.0299,325,10,redis,7,preference_update,True
+5,What drink preference did I mention first?,10.0,8.0,0.0286,373,11,redis,7,preference_update,True
+1,I usually prefer tea over coffee.,9.0,0.0,0.7586,7,22,none,7,preference_update,False
+2,"Actually, I've started drinking coffee lately.",9.0,0.0,0.7241,8,21,none,7,preference_update,False
+3,I like it black with no sugar.,9.0,0.0,0.7037,8,19,none,7,preference_update,False
+4,What is my current coffee preference?,8.0,0.0,0.8372,7,36,none,7,preference_update,False
+5,What drink preference did I mention first?,5.0,0.0,0.7949,8,31,none,7,preference_update,False
+1,I'm building a RAG system with LangChain.,9.0,0.0,0.8507,10,57,buffer,8,technical_qa,True
+2,I'm using Chroma as the vector store.,9.0,10.0,0.3194,98,46,buffer,8,technical_qa,True
+3,The documents are research papers in PDF format.,10.0,10.0,0.2755,234,89,semantic,8,technical_qa,True
+4,What vector store am I using in my project?,10.0,5.0,0.024,528,13,redis,8,technical_qa,True
+5,What type of documents am I indexing?,7.0,8.0,0.0152,584,9,redis,8,technical_qa,True
+1,I'm building a RAG system with LangChain.,10.0,0.0,0.9769,10,422,none,8,technical_qa,False
+2,I'm using Chroma as the vector store.,9.0,0.0,0.82,9,41,none,8,technical_qa,False
+3,The documents are research papers in PDF format.,9.0,0.0,0.7568,9,28,none,8,technical_qa,False
+4,What vector store am I using in my project?,10.0,0.0,0.9459,10,175,none,8,technical_qa,False
+5,What type of documents am I indexing?,10.0,0.0,0.9463,8,141,none,8,technical_qa,False
+1,I wake up at 6am every day and go for a run.,10.0,0.0,0.6739,15,31,redis,9,personal_assistant,True
+2,I'm vegetarian and allergic to nuts.,10.0,0.0,0.4016,73,49,redis,9,personal_assistant,True
+3,I work from home and take breaks every 2 hours.,9.0,2.0,0.1122,261,33,redis,9,personal_assistant,True
+4,Suggest a morning routine for me.,10.0,10.0,0.4631,313,270,buffer,9,personal_assistant,True
+5,What dietary restrictions do I have?,5.0,8.0,0.0156,694,11,redis,9,personal_assistant,True
+1,I wake up at 6am every day and go for a run.,10.0,0.0,0.6875,15,33,none,9,personal_assistant,False
+2,I'm vegetarian and allergic to nuts.,10.0,0.0,0.7879,7,26,none,9,personal_assistant,False
+3,I work from home and take breaks every 2 hours.,10.0,0.0,0.8286,12,58,none,9,personal_assistant,False
+4,Suggest a morning routine for me.,10.0,0.0,0.9763,7,288,none,9,personal_assistant,False
+5,What dietary restrictions do I have?,8.0,0.0,0.9239,7,85,none,9,personal_assistant,False
+1,My favorite programming language is Rust.,10.0,0.0,0.8372,7,36,redis,10,long_term_recall,True
+2,Let's talk about something else - what's the capital of Fran...,10.0,0.0,0.2689,87,32,semantic,10,long_term_recall,True
+3,Tell me a fun fact about dolphins.,10.0,0.0,0.2806,182,71,semantic,10,long_term_recall,True
+4,What's 2 + 2?,10.0,0.0,0.0796,312,27,semantic,10,long_term_recall,True
+5,What's my favorite programming language?,2.0,10.0,0.0257,569,15,redis,10,long_term_recall,True
+1,My favorite programming language is Rust.,10.0,0.0,0.7941,7,27,none,10,long_term_recall,False
+2,Let's talk about something else - what's the capital of Fran...,10.0,0.0,0.3684,12,7,none,10,long_term_recall,False
+3,Tell me a fun fact about dolphins.,10.0,0.0,0.7419,8,23,none,10,long_term_recall,False
+4,What's 2 + 2?,10.0,0.0,0.5333,7,8,none,10,long_term_recall,False
+5,What's my favorite programming language?,7.0,0.0,0.8421,6,32,none,10,long_term_recall,False
+1,Tôi dị ứng sữa bò.,10.0,0.0,0.9298,8,106,redis,11,conflict_update,True
+2,Tôi thích màu xanh lá.,10.0,0.0,0.2063,150,39,redis,11,conflict_update,True
+3,"À nhầm, tôi dị ứng đậu nành chứ không phải sữa bò.",10.0,5.0,0.2495,343,114,buffer,11,conflict_update,True
+4,Tôi có dị ứng gì vậy?,2.0,10.0,0.069,540,40,redis,11,conflict_update,True
+5,Màu sắc yêu thích của tôi là gì?,2.0,0.0,0.0151,849,13,redis,11,conflict_update,True
+1,Tôi dị ứng sữa bò.,10.0,0.0,0.9375,8,120,none,11,conflict_update,False
+2,Tôi thích màu xanh lá.,10.0,0.0,0.86,7,43,none,11,conflict_update,False
+3,"À nhầm, tôi dị ứng đậu nành chứ không phải sữa bò.",10.0,0.0,0.8376,19,98,none,11,conflict_update,False
+4,Tôi có dị ứng gì vậy?,10.0,0.0,0.9231,8,96,none,11,conflict_update,False
+5,Màu sắc yêu thích của tôi là gì?,5.0,0.0,0.7027,11,26,none,11,conflict_update,False
+1,My name is David and I'm a data scientist.,10.0,0.0,0.697,10,23,redis,12,trim_budget,True
+2,"I work with Python, Pandas, and Scikit-learn daily.",8.0,10.0,0.3333,82,41,redis,12,trim_budget,True
+3,My current project involves time series forecasting.,10.0,10.0,0.1765,196,42,buffer,12,trim_budget,True
+4,I use LSTM and Transformer models for the forecasting task.,9.0,9.0,0.1003,314,35,semantic,12,trim_budget,True
+5,The dataset has 5 years of hourly energy consumption data.,10.0,10.0,0.1357,382,60,semantic,12,trim_budget,True
+6,We pre-process with z-score normalization and sliding window...,10.0,10.0,0.1462,432,74,semantic,12,trim_budget,True
+7,The model achieves MAE of 12.3 on the test set.,9.0,8.0,0.0846,563,52,semantic,12,trim_budget,True
+8,We deploy the model via FastAPI on a Kubernetes cluster.,9.0,5.0,0.0754,834,68,buffer,12,trim_budget,True
+9,The team has 4 members: 2 engineers and 2 analysts.,9.0,5.0,0.066,722,51,buffer,12,trim_budget,True
+10,What is my name and what do I do professionally?,0.0,2.0,0.013,911,12,redis,12,trim_budget,True
+1,My name is David and I'm a data scientist.,8.0,0.0,0.5833,10,14,none,12,trim_budget,False
+2,"I work with Python, Pandas, and Scikit-learn daily.",9.0,0.0,0.7581,15,47,none,12,trim_budget,False
+3,My current project involves time series forecasting.,10.0,0.0,0.9252,8,99,none,12,trim_budget,False
+4,I use LSTM and Transformer models for the forecasting task.,10.0,0.0,0.9104,12,122,none,12,trim_budget,False
+5,The dataset has 5 years of hourly energy consumption data.,8.0,0.0,0.6842,12,26,none,12,trim_budget,False
+6,We pre-process with z-score normalization and sliding window...,10.0,0.0,0.9203,11,127,none,12,trim_budget,False
+7,The model achieves MAE of 12.3 on the test set.,10.0,0.0,0.8026,15,61,none,12,trim_budget,False
+8,We deploy the model via FastAPI on a Kubernetes cluster.,10.0,0.0,0.9811,12,622,none,12,trim_budget,False
+9,The team has 4 members: 2 engineers and 2 analysts.,9.0,0.0,0.625,15,25,none,12,trim_budget,False
+10,What is my name and what do I do professionally?,8.0,0.0,0.7442,11,32,none,12,trim_budget,False
